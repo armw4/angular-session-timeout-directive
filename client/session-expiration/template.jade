@@ -1,0 +1,5 @@
+.session-expiration
+  timer(countdown="expirationCountdown", max-time-unit="'minute'", interval="1000")
+    span Your session will expire in:
+    p {{minutes}} minutes, and {{sseconds}} second{{secondsS}}
+  button.btn.btn-default(ng-click="continue()") Keep Me Logged In

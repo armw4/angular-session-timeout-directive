@@ -1,0 +1,12 @@
+doctype html
+html(ng-app="app")
+  head
+    title= title
+    <!-- inject:css -->
+    <!-- endinject -->
+  body
+    p Welcome to the ng-session-timeout demo
+    session-expiration(expiration-window="60", expiration-countdown="65")
+    .test(ng-controller="HttpCtl")
+    <!-- inject:js -->
+    <!-- endinject -->
