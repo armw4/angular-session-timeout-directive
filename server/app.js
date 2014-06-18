@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 
 var routes    = require('./routes/index');
-var users     = require('./routes/users');
 var keepAlive = require('./routes/keep-alive');
 
 var app = express();
@@ -27,7 +26,6 @@ app.use(express.static(path.join(__dirname, '..', 'build')));
 app.use(express.static(path.join(__dirname, '..', 'bower_components')));
 
 app.use('/', routes);
-app.use('/users', users);
 app.use('/keep-alive', keepAlive);
 
 /// catch 404 and forward to error handler
